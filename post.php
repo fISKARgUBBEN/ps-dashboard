@@ -24,7 +24,7 @@ if(IsInjected($visitor_email))
 $email_from = 'support@tickster.com';//<== update the email address
 $email_subject = "Fråga från Zendesk Guide";
 $email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+    "Here is the message:\n $message";
 
 $url = $_GET['link'];
 $to = "robin.malmquist@tickster.com";//<== update the email address
