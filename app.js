@@ -1,10 +1,8 @@
-const login = 'robin.malmquist@tickster.com'
-const password = "fzZeymQSWOgfOvbuqmnhP2Mr18lCWVWmPmUvN8Vp";
-// ('https://tickster.zendesk.com/api/v2/channels/voice/stats/agents_activity'
+const apiTokenEncoded = 'cm9iaW4ubWFsbXF1aXN0QHRpY2tzdGVyLmNvbS90b2tlbjpmelpleW1RU1dPZ2ZPdmJ1cW1uaFAyTXIxOGxDV1ZXbVBtVXZOOFZw';
 
 fetch("https://tickster.zendesk.com/api/v2/channels/voice/stats/agents_activity", {
   headers: new Headers({
-    "Authorization": `Basic ${login}:${password})}`
+    "Authorization": `Basic ${apiTokenEncoded}`
   }),
 }).then(response => {
   if (!response.ok) throw new Error(response.status);
@@ -13,11 +11,11 @@ fetch("https://tickster.zendesk.com/api/v2/channels/voice/stats/agents_activity"
   console.log(response);
 })
 
-var agentInfo = {
-    name: 'Robin Malmquist',
-    calls: 14,
-    callTime: 34
-};
+// var agentInfo = {
+//     name: 'Robin Malmquist',
+//     calls: 14,
+//     callTime: 34
+// };
 
 // var newAgent = `<div class="agent-card agent-card-on-call"><div class="agent-photo">    <i class="fas fa-user user"></i></div><div class="agent-info">    <h4>${agentInfo.name}</h4>    <strong>${agentInfo.calls}</strong> samtal - <strong>${agentInfo.callTime}</strong> min</div></div>`;
 
