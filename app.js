@@ -1,4 +1,4 @@
-const apiTokenEncoded = 'cm9iaW4ubWFsbXF1aXN0QHRpY2tzdGVyLmNvbS90b2tlbjpmelpleW1RU1dPZ2ZPdmJ1cW1uaFAyTXIxOGxDV1ZXbVBtVXZOOFZw';
+const apiTokenEncoded = null;
 
 fetch("https://tickster.zendesk.com/api/v2/channels/voice/stats/agents_activity", {
   headers: new Headers({
